@@ -45,5 +45,3 @@ main_chain = SequentialChain(chains=[topic_chain, details_chain, coordinates_cha
 
 if input_text:
     st.write(main_chain({'topic':input_text}))
-    
-
