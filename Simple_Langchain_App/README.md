@@ -1,2 +1,3 @@
 # Langchain
-A repository for projects relevant to LLms and Langchain
+
+A Simple Langchain application leveraging Prompt Templates, Chains and Memory Buffers
