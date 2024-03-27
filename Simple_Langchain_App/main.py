@@ -36,12 +36,23 @@ coordinates_prompt = PromptTemplate(input_variables=['details'], template='Gener
 
 llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
 
+#Memory
+
+context_memory = ConversationBufferMemory(input_key='topic', memory_key='chat_history')
+details_memory = ConversationBufferMemory(input_key='context', memory_key='chat_history')
+coordinates_memory = ConversationBufferMemory(input_key='details', memory_key='details_history')
+
 #chain
-topic_chain = LLMChain(llm=llm, prompt=topic_prompt, verbose=True, output_key='context')
-details_chain = LLMChain(llm=llm, prompt=details_prompt, verbose=True, output_key='details')
-coordinates_chain = LLMChain(llm=llm, prompt=coordinates_prompt, verbose=True, output_key='coordinates')
+topic_chain = LLMChain(llm=llm, prompt=topic_prompt, verbose=True, output_key='context', memory=context_memory)
+details_chain = LLMChain(llm=llm, prompt=details_prompt, verbose=True, output_key='details', memory=details_memory)
+coordinates_chain = LLMChain(llm=llm, prompt=coordinates_prompt, verbose=True, output_key='coordinates', memory=coordinates_memory)
 
 main_chain = SequentialChain(chains=[topic_chain, details_chain, coordinates_chain], verbose=False, input_variables=['topic'], output_variables=['context','details','coordinates'])
 
 if input_text:
     st.write(main_chain({'topic':input_text}))
+
+    with st.expander('Details'):
+        st.info(details_memory.buffer)
+    with st.expander('Coordinates'):
+        st.info(coordinates_memory.buffer)
