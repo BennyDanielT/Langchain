@@ -5,7 +5,7 @@ import os
 import streamlit as st
 
 load_dotenv(dotenv_path='./.env')
-openai_api_key = os.getenv('OPENAI_KEY')
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 def retrieve_model_response(query):
     llm = ChatOpenAI(openai_api_key=openai_api_key, model_name="gpt-3.5-turbo", temperature=0.9)
