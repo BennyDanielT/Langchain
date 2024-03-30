@@ -1,6 +1,3 @@
-# Langchain
-A repository for projects relevant to LLms and Langchain
-
 ---
 title: Simple Langchain app with Chat Models
 emoji: 🚀
