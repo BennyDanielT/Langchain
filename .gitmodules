@@ -6,4 +6,4 @@
 	url = https://huggingface.co/spaces/dan-earth-616/Pinecone_Example
 [submodule "Talk-with-documents"]
 	path = Talk-with-documents
-	url = https://huggingface.co/spaces/dan-earth-616/Talk-with-documents
+	url = https://github.com/BennyDanielT/Talk-With-Documents
