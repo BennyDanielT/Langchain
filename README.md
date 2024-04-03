@@ -1,7 +1,7 @@
 ---
 title: Simple Langchain app with Chat Models
 emoji: 🚀
-colorFrom: pink
+colorFrom: green
 colorTo: blue
 sdk: streamlit
 sdk_version: 1.10.0
