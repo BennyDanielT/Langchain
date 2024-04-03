@@ -1,0 +1,9 @@
+[submodule "Simple_Langchain_App"]
+	path = Simple_Langchain_App
+	url = https://huggingface.co/spaces/dan-earth-616/Simple_Langchain_App
+[submodule "Pinecone_Example"]
+	path = Pinecone_Example
+	url = https://huggingface.co/spaces/dan-earth-616/Pinecone_Example
+[submodule "Talk-with-documents"]
+	path = Talk-with-documents
+	url = https://huggingface.co/spaces/dan-earth-616/Talk-with-documents
