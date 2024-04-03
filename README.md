@@ -1,41 +1,5 @@
----
-title: Simple Langchain app with Chat Models
-emoji: 🚀
-colorFrom: green
-colorTo: blue
-sdk: streamlit
-sdk_version: 1.10.0
-app_file: app.py
-license: mit
-url: https://huggingface.co/spaces/dan-earth-616/Simple_Langchain_App
----
-
----
-
-title: Pinecone Example
-emoji: 🏆
-colorFrom: purple
-colorTo: indigo
-sdk: streamlit
-sdk_version: 1.32.2
-app_file: app.py
-pinned: false
-license: mit
-url: https://huggingface.co/spaces/dan-earth-616/Pinecone_Example
-
----
-
----
-
-title: Talk With Documents
-emoji: 🐢
-colorFrom: indigo
-colorTo: yellow
-sdk: streamlit
-sdk_version: 1.32.2
-app_file: app.py
-pinned: false
-license: mit
-url: https://huggingface.co/spaces/dan-earth-616/Talk-with-documents
-
----
+| Title                                 | Emoji | Color From | Color To | SDK       | SDK Version | App File | License | URL                                                              |
+| ------------------------------------- | ----- | ---------- | -------- | --------- | ----------- | -------- | ------- | ---------------------------------------------------------------- |
+| Simple Langchain app with Chat Models | 🚀    | green      | blue     | streamlit | 1.10.0      | app.py   | mit     | https://huggingface.co/spaces/dan-earth-616/Simple_Langchain_App |
+| Pinecone Example                      | 🏆    | purple     | indigo   | streamlit | 1.32.2      | app.py   | mit     | https://huggingface.co/spaces/dan-earth-616/Pinecone_Example     |
+| Talk With Documents                   | 🐢    | indigo     | yellow   | streamlit | 1.32.2      | app.py   | mit     | https://huggingface.co/spaces/dan-earth-616/Talk-with-documents  |
